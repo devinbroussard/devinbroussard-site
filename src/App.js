@@ -4,25 +4,24 @@ import React from 'react';
 
 function App() {
   return (
-    <div>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">devin broussard</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class='navbar-nav'>
-              <a class="nav-link active" aria-current="page" href="#">home</a>
-              <a class="nav-link" href='#'>about</a>
-              <a class="nav-link" href='#'>experience</a>   
-              <a class='nav-link' href='#'>work</a>  
-              <a class='nav-link' href='#'>contact me</a>  
-            </div>
-          </div>   
-        </div>
-      </nav>
-    </div>
+    <body class="background">
+      <div>
+        <nav class="navbar navbar-expand navbar-dark navbar-custom">
+          <div class="container-fluid">
+            <a class="justify-content-end navbar-brand fw-light navbar-font" href="#"></a>
+            <div class="d-flex justify-content-center collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav navbar-font fs-4">
+                <button class='menu-button-wrapper fw-light'><a class="nav-link active px-5" aria-current="page" href="home">home</a></button>
+                <button class='menu-button-wrapper fw-light'><a class="nav-link px-5" href='about'>about</a></button>
+                <button class='menu-button-wrapper fw-light'><a class="nav-link px-5" href='experience'>experience</a></button>  
+                <button class='menu-button-wrapper fw-light'><a class='nav-link px-5' href='work'>work</a></button>  
+                <button class='menu-button-wrapper fw-light'><a class='nav-link px-5' href='contact'>contact me</a></button>  
+              </div>
+            </div>   
+          </div>
+        </nav>
+      </div>
+    </body>
   );
 }
 
