@@ -4,11 +4,19 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
+import reactDom from 'react-dom';
+import Navbar from './components/Navbar';
+
+class Page extends React.Component {
+  render() {
+    return (
+      <Navbar />
+    )
+  }
+}
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+    <Page />,
   document.getElementById('root')
 );
 
