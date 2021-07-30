@@ -4,12 +4,12 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
 import reactDom from 'react-dom';
-import Navbar from './components/Navbar';
+import HomePage from './pages/HomePage';
 
 class Page extends React.Component {
   render() {
     return (
-      <Navbar />
+      <HomePage />
     )
   }
 }
