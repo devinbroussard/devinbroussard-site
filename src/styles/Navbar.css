@@ -1,5 +1,5 @@
   .navbar-custom {
-    background-color: hsl(212, 31%, 53%);
+    background-color: hsl(162, 19%, 48%);
     flex-direction: row;
     flex-wrap:nowrap;
     justify-content: center
@@ -7,6 +7,7 @@
   
   .navbar-font {
     letter-spacing: 4px;
+    font-family: 'Open Sans', sans-serif;
   }
   
   .menu-button-wrapper {

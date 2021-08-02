@@ -15,7 +15,9 @@ class Page extends React.Component {
 }
 
 ReactDOM.render(
-    <Page />,
+  <React.StrictMode>
+    <Page />
+  </React.StrictMode>,
   document.getElementById('root')
 );
 

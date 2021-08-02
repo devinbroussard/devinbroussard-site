@@ -5,12 +5,11 @@ import '../styles/Pages.css';
 class HomePage extends React.Component {
   render() {
     return (
-      <body class='background'>
+      <div class='background font'>
         <Navbar />
-        <div>
-          <h1 class='text-center'>devin broussard</h1>
-        </div>
-      </body>
+
+        <h1 class='header fw-lighter d-flex justify-content-center'></h1>
+      </div>
     )
   }
 }
