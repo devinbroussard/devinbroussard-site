@@ -9,6 +9,7 @@ import '../styles/Navbar.css';
 
 function Navbar() {
   return (
+
     <Router>
       <nav class="navbar navbar-expand navbar-dark navbar-custom">
         <div class="container-fluid">
