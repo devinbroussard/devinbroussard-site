@@ -1,15 +1,21 @@
 .background {
-    background-color: hsl(162, 19%, 48%);
+    background-image: url('');
     width: 100vw;
     height: 100vh;
 }
 
 .font {
-    letter-spacing: 4px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .header {
     letter-spacing: 1px;
     color: #FFFFFF;
-    font-size: 90px;
+    font-size: 60px;
+    padding-top: 100px;
+}
+
+.subheader {
+    color: #b9cec8;
+    font-size: 30px;
 }

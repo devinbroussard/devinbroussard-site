@@ -4,12 +4,12 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
 import reactDom from 'react-dom';
-import HomePage from './pages/HomePage';
+import CurrentPage from './components/CurrentPage';
 
 class Page extends React.Component {
   render() {
     return (
-      <HomePage />
+      <CurrentPage />
     )
   }
 }

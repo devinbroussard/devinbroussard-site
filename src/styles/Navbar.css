@@ -1,18 +1,17 @@
   .navbar-custom {
-    background-color: hsl(162, 19%, 48%);
+    background-color: #9c8e93;
     flex-direction: row;
     flex-wrap:nowrap;
-    justify-content: center
+    justify-content: center;
   }
   
   .navbar-font {
-    letter-spacing: 4px;
+    letter-spacing: 3px;
     font-family: 'Open Sans', sans-serif;
   }
   
   .menu-button-wrapper {
     background: transparent;
-    letter-spacing: 4px;
     border-bottom: 0px;
     border-left: 0px;
     border-right: 0px;
