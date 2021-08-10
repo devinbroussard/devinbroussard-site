@@ -1,13 +1,14 @@
   .navbar-custom {
-    background-color: #9c8e93;
     flex-direction: row;
     flex-wrap:nowrap;
     justify-content: center;
+    padding-top: 30px;
   }
   
   .navbar-font {
-    letter-spacing: 3px;
+    letter-spacing: 1px;
     font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
   }
   
   .menu-button-wrapper {
@@ -15,7 +16,7 @@
     border-bottom: 0px;
     border-left: 0px;
     border-right: 0px;
-    border-color: #FFFFFF;
+    border-color: #000000;
   }
 
   .nav-link {
@@ -24,5 +25,10 @@
 
   .active {
     filter:blur(0px);
+  }
+
+  .img {
+    width: 60;
+    height: 60;
   }
   

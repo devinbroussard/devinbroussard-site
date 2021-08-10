@@ -6,14 +6,14 @@ const data = [{
     name: "experience",
     redirect: "/experience"
 },{
-    name: "home",
-    redirect: "/"
-},{
     name: "work",
     redirect: "/work"
 },{
     name: "contact me",
     redirect: "/contacts"
+},{
+    name: "resume",
+    redirect: "/resume"
 }
 ]
 

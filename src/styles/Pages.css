@@ -1,5 +1,5 @@
 .background {
-    background-image: url('');
+    background-color:#ffffff;
     width: 100vw;
     height: 100vh;
 }
@@ -12,7 +12,7 @@
     letter-spacing: 1px;
     color: #FFFFFF;
     font-size: 60px;
-    padding-top: 100px;
+    padding-top: 120px;
 }
 
 .subheader {
