@@ -1,4 +1,7 @@
 const data = [{
+    name: "home",
+    redirect: "",
+},{
     name: "about",
     redirect: "/about"
 },
@@ -9,12 +12,10 @@ const data = [{
     name: "work",
     redirect: "/work"
 },{
-    name: "contact me",
-    redirect: "/contacts"
-},{
     name: "resume",
     redirect: "/resume"
-}
-]
+}]
+
+
 
 export default data;

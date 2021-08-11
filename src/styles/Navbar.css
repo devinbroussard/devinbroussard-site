@@ -2,33 +2,36 @@
     flex-direction: row;
     flex-wrap:nowrap;
     justify-content: center;
-    padding-top: 30px;
+    padding-top: 40px;
   }
   
   .navbar-font {
-    letter-spacing: 1px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
-  }
-  
-  .menu-button-wrapper {
-    background: transparent;
-    border-bottom: 0px;
-    border-left: 0px;
-    border-right: 0px;
-    border-color: #000000;
+    font-size: 20px;
+    color: #41474c;
+    text-decoration: none;
   }
 
-  .nav-link {
-    filter:blur(0.1px);
+  .hover-color:hover {
+    color: #747e86;
+  }
+
+ .button {
+   border-style: solid;   
+   border-right: none;
+   border-top: none;
+   border-left: none;
+   background: none;
+   line-height: 30px;
+   border-width: 5px;
+   outline: none;
+   width: fit-content;
+   border-color: transparent;
+ }
+ .button:hover {
+   border-color: #d5ddbc;
   }
 
   .active {
-    filter:blur(0px);
-  }
+      border-color: #99c221;
 
-  .img {
-    width: 60;
-    height: 60;
   }
-  
