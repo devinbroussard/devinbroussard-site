@@ -16,9 +16,9 @@ function Navbar() {
   return (
     <Router>
       <nav class="navbar-expand navbar-custom">
-        <div class="fluid-container w-75">
+        <div class="fluid-container">
           <div class="d-flex navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-            <div class='navbar-brand me-auto'>
+            <div class='navbar-brand'>
               <a class='navbar-font nav-nav fw-bold' ><img src={face} alt='Face' width="60" height='60' class=''/>Devin Broussard</a>
             </div>
             <div class="navbar-nav navbar-font">
