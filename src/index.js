@@ -9,7 +9,9 @@ import CurrentPage from './components/CurrentPage';
 class Page extends React.Component {
   render() {
     return (
+      <div className='container'>
       <CurrentPage />
+      </div>
     )
   }
 }

@@ -5,7 +5,7 @@ import '../styles/Pages.css';
 
 function CurrentPage() {
     return (
-        <div class='background'>
+        <div>
             <Navbar />
             <HomePage />
         </div>

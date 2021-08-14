@@ -1,7 +1,5 @@
-.background {
+body {
     background-color:#fafbf5;
-    width: 100%;
-    height: 100vh;
 }
 
 .font {
