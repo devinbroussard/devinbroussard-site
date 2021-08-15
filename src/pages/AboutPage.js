@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import "../styles/Pages.css";
 
-function HomePage() {
-  return <h1>Yo</h1>;
+function AboutPage() {
+  return <h1>Hello</h1>;
 }
-export default HomePage;
+
+export default AboutPage;

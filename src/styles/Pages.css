@@ -1,18 +1,18 @@
 body {
-    background-color:#fafbf5;
+  background-color: #fafbf5;
 }
 
 .font {
-    font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .header {
-    letter-spacing: 1px;
-    color: #FFFFFF;
-    font-size: 60px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  font-size: 60px;
 }
 
 .subheader {
-    color: #b9cec8;
-    font-size: 30px;
+  color: #b9cec8;
+  font-size: 30px;
 }
