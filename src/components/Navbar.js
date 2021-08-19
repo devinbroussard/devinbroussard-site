@@ -13,16 +13,19 @@ import HomePage from "../pages/HomePage";
 import AboutPage from "../pages/AboutPage";
 
 function Navbar() {
-  function usePageViews() {
-    let location = useLocation();
-    React.useEffect(() => {
-      GainNode.send(["pageview", location.pathname]);
-    }, [location]);
+  var btns = document.getElementsByClassName("button");
+
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+    });
   }
 
   const listItems = routersettings.map((routerItem, index) => (
     <Link to={routerItem.redirect} key={index} className="nav-link">
-      <button className={routerItem.className}>
+      <button className="button navbar-font hover-color">
         <span className="fw-bold">0{index + 1} </span>
         {routerItem.name}
       </button>
@@ -48,11 +51,8 @@ function Navbar() {
       </div>
 
       <Switch>
-        <Route exact path="/">
-          <HomePage />
-        </Route>
-        <Route path="/about">
-          <AboutPage />
+        <Route exact path={routerItem.redirect}>
+          <{routerItem.linkTo} />
         </Route>
       </Switch>
     </Router>

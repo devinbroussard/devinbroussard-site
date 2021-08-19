@@ -34,6 +34,10 @@
   border-color: #d5ddbc;
 }
 
-.active a {
+.active {
+  border-color: #99c221;
+}
+.active:hover {
+  color: #41474c;
   border-color: #99c221;
 }

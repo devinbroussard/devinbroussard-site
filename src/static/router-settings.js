@@ -1,28 +1,35 @@
+import HomePage from "../pages/HomePage";
+
 const data = [
   {
     name: "home",
     redirect: "/",
-    className: "button navbar-font hover-color",
+    className: "active",
+    linkTo: <HomePage />,
   },
   {
     name: "about",
     redirect: "/about",
-    className: "button navbar-font hover-color",
+    className: "",
+    linkTo: "HomePage",
   },
   {
     name: "experience",
     redirect: "/experience",
-    className: "button navbar-font hover-color",
+    className: "",
+    linkTo: <HomePage />,
   },
   {
     name: "work",
     redirect: "/work",
-    className: "button navbar-font hover-color",
+    className: "",
+    linkTo: "HomePage",
   },
   {
     name: "resume",
     redirect: "/resume",
-    className: "button navbar-font hover-color",
+    className: "",
+    linkTo: "HomePage",
   },
 ];
 
