@@ -52,7 +52,7 @@ function Navbar() {
 
       <Switch>
         <Route exact path={routerItem.redirect}>
-          <{routerItem.linkTo} />
+          {routerItem.linkTo}
         </Route>
       </Switch>
     </Router>
