@@ -1,3 +1,5 @@
+import React from "react";
+import AboutPage from "../pages/AboutPage";
 import HomePage from "../pages/HomePage";
 
 const data = [
@@ -11,25 +13,25 @@ const data = [
     name: "about",
     redirect: "/about",
     className: "",
-    linkTo: "HomePage",
+    linkTo: <AboutPage />,
   },
   {
     name: "experience",
     redirect: "/experience",
     className: "",
-    linkTo: <HomePage />,
+    linkTo: "",
   },
   {
-    name: "work",
-    redirect: "/work",
+    name: "projects",
+    redirect: "/project",
     className: "",
-    linkTo: "HomePage",
+    linkTo: "",
   },
   {
-    name: "resume",
-    redirect: "/resume",
+    name: "contact",
+    redirect: "/contact",
     className: "",
-    linkTo: "HomePage",
+    linkTo: "",
   },
 ];
 

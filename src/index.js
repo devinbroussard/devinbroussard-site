@@ -1,10 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.css";
-import reactDom from "react-dom";
-import HomePage from "./pages/HomePage";
 import Navbar from "./components/Navbar";
 
 class Page extends React.Component {

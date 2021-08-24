@@ -1,35 +1,26 @@
 import React, { Component } from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  useLocation,
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "../styles/Navbar.css";
 import routersettings from "../static/router-settings";
 import face from "../data/face.png";
+import data from "../static/router-settings";
 import HomePage from "../pages/HomePage";
-import AboutPage from "../pages/AboutPage";
 
+//Navbar component
 function Navbar() {
-  var btns = document.getElementsByClassName("button");
-
-  for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function() {
-      var current = document.getElementsByClassName("active");
-      current[0].className = current[0].className.replace(" active", "");
-      this.className += " active";
-    });
-  }
-
-  const listItems = routersettings.map((routerItem, index) => (
+  const routerLinks = routersettings.map((routerItem, index) => (
     <Link to={routerItem.redirect} key={index} className="nav-link">
       <button className="button navbar-font hover-color">
         <span className="fw-bold">0{index + 1} </span>
         {routerItem.name}
       </button>
     </Link>
+  ));
+
+  const Pages = ["HomePage", "About", "Experience", "Projects", "Contact"];
+  const  = React.lazy(() => import(`../pages/${x}`));
+  const routerRoutes = routersettings.map((routerItem) => (
+    <Route path={routerItem.redirect}></Route>
   ));
 
   return (
@@ -47,14 +38,9 @@ function Navbar() {
             Devin Broussard
           </Link>
         </div>
-        <div className="navbar-nav col-6">{listItems}</div>
+        <div className="navbar-nav col-6">{routerLinks}</div>
       </div>
-
-      <Switch>
-        <Route exact path={routerItem.redirect}>
-          {routerItem.linkTo}
-        </Route>
-      </Switch>
+      <Switch>{routerRoutes}</Switch>
     </Router>
   );
 }
