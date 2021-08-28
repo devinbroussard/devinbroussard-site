@@ -1,10 +1,8 @@
-import React, { Component } from "react";
+import React, { Component, Suspense } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "../styles/Navbar.css";
 import routersettings from "../static/router-settings";
 import face from "../data/face.png";
-import data from "../static/router-settings";
-import HomePage from "../pages/HomePage";
 
 //Navbar component
 function Navbar() {
@@ -17,10 +15,12 @@ function Navbar() {
     </Link>
   ));
 
-  const Pages = ["HomePage", "About", "Experience", "Projects", "Contact"];
-  const  = React.lazy(() => import(`../pages/${x}`));
   const routerRoutes = routersettings.map((routerItem) => (
-    <Route path={routerItem.redirect}></Route>
+    <Route
+      exact
+      path={routerItem.redirect}
+      component={routerItem.linkTo}
+    ></Route>
   ));
 
   return (
@@ -40,7 +40,9 @@ function Navbar() {
         </div>
         <div className="navbar-nav col-6">{routerLinks}</div>
       </div>
-      <Switch>{routerRoutes}</Switch>
+      <Switch>
+        <Suspense fallback={<div>Loading...</div>}>{routerRoutes}</Suspense>
+      </Switch>
     </Router>
   );
 }
