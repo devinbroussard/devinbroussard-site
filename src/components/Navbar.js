@@ -6,17 +6,34 @@ import face from "../data/face.png";
 
 //Navbar component
 function Navbar() {
+  const buttons = document.getElementsByClassName("button");
+  const active = document.getElementsByClassName("active");
+
+  const button = buttons.map((button, index));
+
+  function MakeActive() {
+    for (var i = 0, length = buttons.length; i < length; i++) {
+      if (buttons[i] == active) active.classList.remove("active");
+    }
+    button.classList.add("active");
+  }
+
   const routerLinks = routersettings.map((routerItem, index) => (
     <Link to={routerItem.redirect} key={index} className="nav-link">
-      <button className="button navbar-font hover-color">
+      <button
+        className="button navbar-font hover-color"
+        onClick={MakeActive}
+        id={index}
+      >
         <span className="fw-bold">0{index + 1} </span>
         {routerItem.name}
       </button>
     </Link>
   ));
 
-  const routerRoutes = routersettings.map((routerItem) => (
+  const routerRoutes = routersettings.map((routerItem, index) => (
     <Route
+      key={index}
       exact
       path={routerItem.redirect}
       component={routerItem.linkTo}
