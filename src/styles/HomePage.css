@@ -1,0 +1,29 @@
+body {
+  background-color: #fafbf5;
+}
+
+.font {
+  font-family: "Open Sans", sans-serif;
+}
+
+.pretitle {
+  padding-top: 140px;
+  letter-spacing: 1px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.subheader {
+  color: #b9cec8;
+  font-size: 30px;
+}
+
+.highlight {
+  color: #99c221;
+}
+
+.container-custom {
+  width: 100%;
+  padding-right: 200px;
+  padding-left: 200px;
+}

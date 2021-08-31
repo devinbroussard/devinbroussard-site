@@ -1,5 +1,4 @@
-import React, { Component } from "react";
-import "../styles/Pages.css";
+import React from "react";
 
 function AboutPage() {
   return <h1>Hello</h1>;

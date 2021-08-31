@@ -1,4 +1,4 @@
-import React, { Component, Suspense } from "react";
+import React, { Suspense } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "../styles/Navbar.css";
 import routersettings from "../static/router-settings";
@@ -9,13 +9,10 @@ function Navbar() {
   const buttons = document.getElementsByClassName("button");
   const active = document.getElementsByClassName("active");
 
-  const button = buttons.map((button, index));
-
   function MakeActive() {
     for (var i = 0, length = buttons.length; i < length; i++) {
-      if (buttons[i] == active) active.classList.remove("active");
+      if (buttons[i] === active) active.classList.remove("active");
     }
-    button.classList.add("active");
   }
 
   const routerLinks = routersettings.map((routerItem, index) => (
@@ -42,7 +39,7 @@ function Navbar() {
 
   return (
     <Router>
-      <div className="navbar-expand navbar-custom row justify-content-between navbar-nav">
+      <div className="navbar-expand navbar-custom row navbar-nav">
         <div className="col-6">
           <Link to="/" className="navbar-font nav-nav fw-bold">
             <img
@@ -55,7 +52,7 @@ function Navbar() {
             Devin Broussard
           </Link>
         </div>
-        <div className="navbar-nav col-6">{routerLinks}</div>
+        <div className="navbar-nav col-6 flex-row-reverse">{routerLinks}</div>
       </div>
       <Switch>
         <Suspense fallback={<div>Loading...</div>}>{routerRoutes}</Suspense>
