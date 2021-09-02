@@ -5,27 +5,32 @@ const data = [
   {
     name: "home",
     redirect: "/",
-    linkTo: React.lazy(() => import(`../pages/HomePage`)),
+    component: React.lazy(() => import(`../pages/HomePage`)),
+    classes: "button navbar-font hover-color",
   },
   {
     name: "about",
     redirect: "/about",
-    linkTo: React.lazy(() => import(`../pages/AboutPage`)),
+    component: React.lazy(() => import(`../pages/AboutPage`)),
+    classes: "button navbar-font hover-color",
   },
   {
     name: "experience",
     redirect: "/experience",
-    linkTo: React.lazy(() => import(`../pages/ExperiencePage`)),
+    component: React.lazy(() => import(`../pages/ExperiencePage`)),
+    classes: "button navbar-font hover-color",
   },
   {
     name: "projects",
     redirect: "/project",
-    linkTo: React.lazy(() => import(`../pages/ProjectsPage`)),
+    component: React.lazy(() => import(`../pages/ProjectsPage`)),
+    classes: "button navbar-font hover-color",
   },
   {
     name: "contact",
     redirect: "/contact",
-    linkTo: React.lazy(() => import(`../pages/ContactPage`)),
+    component: React.lazy(() => import(`../pages/ContactPage`)),
+    classes: "button navbar-font hover-color",
   },
 ];
 
