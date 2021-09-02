@@ -12,26 +12,33 @@ function Navbar() {
   //Then, I need to set that matched routerItem as active with the active class
 
   //const created to get and store the current path
-  const currentPage = window.location.pathname;
+  const currentPath = window.location.pathname;
+  var currentPage = "";
 
-  //forEach loop created to loop through the data from routersettings and match the routerItem redirect with the current path
   function CheckActive() {
     routersettings.forEach(function(routerItem) {
-      if (routerItem.redirect === currentPage) {
-        console.log(routerItem.name);
+      while (currentPage !== currentPath) {
         routerItem.classes += " active";
+        currentPage = currentPath;
+        console.log("yes");
       }
     });
   }
 
+  CheckActive();
+
+  // //forEach loop created to loop through the data from routersettings and match the routerItem redirect with the current path
+  // function CheckActive() {
+  //   routersettings.forEach(function(routerItem) {
+  //     if (routerItem.redirect === currentPath) {
+  //       routerItem.classes += " active";
+  //     }
+  //   });
+  // }
+
   //List created by looping through the data from router-settings and creating links
   const routerLinks = routersettings.map((routerItem, index) => (
-    <Link
-      to={routerItem.redirect}
-      key={index}
-      className="nav-link"
-      onClick={CheckActive()}
-    >
+    <Link to={routerItem.redirect} key={index} className="nav-link">
       <button className={routerItem.classes} id={index}>
         <span className="fw-bold">0{index + 1} </span>
         {routerItem.name}

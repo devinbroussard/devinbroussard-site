@@ -3,7 +3,7 @@ import "../styles/HomePage.css";
 
 function HomePage() {
   return (
-    <div>
+    <div className="flex-box">
       <h1 className="pretitle highlight justify-content-center">
         HELLO, MY NAME IS DEVIN
       </h1>
