@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React, { useState, Suspense, useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "../styles/Navbar.css";
 import routersettings from "../static/router-settings";
@@ -10,50 +10,39 @@ function Navbar() {
   //path, redirect, and active class
   //I need a function that gets the current path and matches it with a redirect from one of the routerItems
   //Then, I need to set that matched routerItem as active with the active class
+  //Dynamic classes
 
-  //const created to get and store the current path
-  const currentPath = window.location.pathname;
-  var currentPage = "";
-
-  function CheckActive() {
-    routersettings.forEach(function(routerItem) {
-      while (currentPage !== currentPath) {
-        routerItem.classes += " active";
-        currentPage = currentPath;
-        console.log("yes");
-      }
-    });
-  }
-
-  CheckActive();
-
-  // //forEach loop created to loop through the data from routersettings and match the routerItem redirect with the current path
-  // function CheckActive() {
-  //   routersettings.forEach(function(routerItem) {
-  //     if (routerItem.redirect === currentPath) {
-  //       routerItem.classes += " active";
-  //     }
-  //   });
-  // }
+  //Declare a new state variable, which we'll call "activeClass"
+  const [routerSettingsState, changeState] = useState(routersettings);
 
   //List created by looping through the data from router-settings and creating links
-  const routerLinks = routersettings.map((routerItem, index) => (
-    <Link to={routerItem.redirect} key={index} className="nav-link">
-      <button className={routerItem.classes} id={index}>
-        <span className="fw-bold">0{index + 1} </span>
-        {routerItem.name}
-      </button>
-    </Link>
-  ));
+  const routerLinks = routerSettingsState.map((routerItem, index) => {
+    //const created to get and store the current path
+    const currentPath = window.location.pathname;
+    let checkActive = "";
+
+    if (routerItem.redirect === currentPath) {
+      checkActive = "active";
+    }
+
+    return (
+      <Link to={routerItem.redirect} key={index} className="nav-link">
+        <button
+          className={`button navbar-font hover-color ${checkActive}`}
+          id={index}
+        >
+          <span className="fw-bold">0{index + 1} </span>
+          {routerItem.name}
+        </button>
+      </Link>
+    );
+  });
 
   //List created by looping through the data from router-settings that gives the page route and component
   const routerRoutes = routersettings.map((routerItem, index) => (
-    <Route
-      key={index}
-      exact
-      path={routerItem.redirect}
-      component={routerItem.component}
-    ></Route>
+    <Route key={index} exact path={routerItem.redirect}>
+      <routerItem.component />
+    </Route>
   ));
 
   return (
