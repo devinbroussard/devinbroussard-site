@@ -47,7 +47,8 @@ function Navbar() {
 
   return (
     <Router>
-      <div className="navbar-expand navbar-custom row navbar-nav">
+      <div className="header-background"/>
+      <div className="navbar-expand navbar-custom row navbar-nav container-custom position-absolute">
         <div className="col-6">
           <Link to="/" className="navbar-font nav-nav fw-bold">
             <img

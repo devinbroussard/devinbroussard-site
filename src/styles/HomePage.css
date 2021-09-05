@@ -5,14 +5,29 @@ body {
 .pretitle {
   padding-top: 140px;
   letter-spacing: 1px;
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 700;
 }
+
+.endtitle {
+  padding-top: 8px;
+  letter-spacing: 1px;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.title-container {
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
 
 .title {
   font-family: "Playfair Display", serif;
   color: #41474c;
   font-size: 120px;
+  align-self: center;
+  padding-bottom: ;
 }
 
 .subheader {
@@ -24,8 +39,6 @@ body {
   color: #99c221;
 }
 
-.container-custom {
-  width: 100%;
-  padding-right: 200px;
-  padding-left: 200px;
+.resume-text {
+  color: red;
 }
