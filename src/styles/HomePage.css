@@ -3,7 +3,6 @@ body {
 }
 
 .pretitle {
-  padding-top: 140px;
   letter-spacing: 1px;
   font-size: 26px;
   font-weight: 700;
@@ -17,8 +16,8 @@ body {
 }
 
 .title-container {
-  padding-left: 25%;
-  padding-right: 25%;
+  padding-top: 140px;
+  display: inline-block;
 }
 
 
@@ -27,7 +26,6 @@ body {
   color: #41474c;
   font-size: 120px;
   align-self: center;
-  padding-bottom: ;
 }
 
 .subheader {

@@ -7,7 +7,7 @@ import Navbar from "./components/Navbar";
 class Page extends React.Component {
   render() {
     return (
-      <div >
+      <div>
         <Navbar />
       </div>
     );
