@@ -4,33 +4,27 @@ body {
 
 .pretitle {
   letter-spacing: 1px;
-  font-size: 26px;
+  font-size: 28px;
   font-weight: 700;
 }
 
 .endtitle {
   padding-top: 8px;
   letter-spacing: 1px;
-  font-size: 26px;
+  font-size: 28px;
   font-weight: 700;
 }
 
 .title-container {
-  padding-top: 140px;
+  padding-top: 250px;
   display: inline-block;
 }
-
 
 .title {
   font-family: "Playfair Display", serif;
   color: #41474c;
-  font-size: 120px;
+  font-size:130px;
   align-self: center;
-}
-
-.subheader {
-  color: #b9cec8;
-  font-size: 30px;
 }
 
 .highlight {
