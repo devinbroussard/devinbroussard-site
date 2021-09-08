@@ -7,11 +7,10 @@ function HomePage() {
   
   return (
     <div className="">
-      <div className="title-container px-auto">
-        <h1 className="pretitle highlight">HELLO, MY NAME IS DEVIN</h1>
-        <span className="title">I make software.</span>
-        <h1 className="endtitle highlight d-flex justify-content-end">
-          HERE IS MY RESUME
+      <div className="title-container">
+        <h1 className="pretitle highlight"></h1>
+        <span className="title"></span>
+        <h1 className="endtitle highlight">
         </h1>
       </div>
     </div>

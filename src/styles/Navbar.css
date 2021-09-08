@@ -2,7 +2,7 @@
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
-  padding-top: 50px;
+  padding-top: 12px;
 }
 
 .container-custom {
@@ -12,7 +12,7 @@
 }
 
 .navbar-font {
-  font-size: 21px;
+  font-size: 23px;
   color: #41474c;
   text-decoration: none;
 }
@@ -55,5 +55,5 @@
 .header-background {
   width: 100vw;
   background-color:  #99c221;
-  height: 5px;;
+  height: 2px;;
 }
