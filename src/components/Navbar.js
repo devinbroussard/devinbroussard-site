@@ -12,28 +12,42 @@ function Navbar() {
   //Then, I need to set that matched routerItem as active with the active class
   //Dynamic classes
 
-  //Declare a new state variable, which we'll call "activeClass"
-  const [routerSettingsState, changeState] = useState(activeClass);
-
+  //Declare a new state variable, which we'll call "routerSettingsState"
+  const [routerSettingsState, changeState] = useState([]);
   var activeClass = "null";
-
+  const currentPath = window.location.pathname;
+  
   useEffect(() => {
-    routerSettingsState;
-  }, [routerSettingsState]);
+
+    const initialState = routersettings.map((routerItem) => {
+      if (routerItem.redirect === currentPath) {
+        routerItem.isActive = true;
+      }
+      if (routerItem.isActive = true) {
+        activeClass = "active";
+      }
+    });
+    changeState(initialState);
+  }, [routersettings]);
+
 
   //List created by looping through the data from router-settings and creating links
   const routerLinks = routersettings.map((routerItem, index) => {
-    //const created to get and store the current path
-    const currentPath = window.location.pathname;
 
-    if (routerItem.redirect === currentPath) {
-      activeClass = "active";
+    //Function that changes the routerSettingsState to "active" if the routerItem's redirect matches the path
+    function CheckActive() {
+      if (routerItem.redirect === currentPath) {
+        routerItem.isActive = true;
+      }
+      if (routerItem.isActive === true) {
+        changeState("active");
+      }
     }
 
     return (
       <Link to={routerItem.redirect} key={index} className="nav-link">
         <button
-          className={`button navbar-font hover-color ${routerSettingsState}`}
+          className={`button navbar-font hover-color ${activeClass}`}
           id={index}
         >
           <span className="fw-bold">0{index + 1} </span>
