@@ -45,7 +45,7 @@
 }
 
 .active {
-  border-color: #99c221;
+  border: 1px solid #99c221;
 }
 .active:hover {
   color: #41474c;
@@ -54,6 +54,6 @@
 
 .header-background {
   width: 100vw;
-  background-color:  #99c221;
-  height: 2px;;
+  background-color: #99c221;
+  height: 2px;
 }
