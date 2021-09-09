@@ -13,22 +13,27 @@ function Navbar() {
   //Dynamic classes
 
   //Declare a new state variable, which we'll call "activeClass"
-  const [routerSettingsState, changeState] = useState(routersettings);
+  const [routerSettingsState, changeState] = useState(activeClass);
+
+  var activeClass = "null";
+
+  useEffect(() => {
+    routerSettingsState;
+  }, [routerSettingsState]);
 
   //List created by looping through the data from router-settings and creating links
-  const routerLinks = routerSettingsState.map((routerItem, index) => {
+  const routerLinks = routersettings.map((routerItem, index) => {
     //const created to get and store the current path
     const currentPath = window.location.pathname;
-    let checkActive = "";
 
     if (routerItem.redirect === currentPath) {
-      checkActive = "active";
+      activeClass = "active";
     }
 
     return (
       <Link to={routerItem.redirect} key={index} className="nav-link">
         <button
-          className={`button navbar-font hover-color ${checkActive}`}
+          className={`button navbar-font hover-color ${routerSettingsState}`}
           id={index}
         >
           <span className="fw-bold">0{index + 1} </span>
