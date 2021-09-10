@@ -45,7 +45,7 @@
 }
 
 .active {
-  border-color: #99c221;
+  border: 1px solid red;
 }
 .active:hover {
   color: #41474c;
