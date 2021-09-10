@@ -3,13 +3,15 @@ import ReactDOM from "react-dom";
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.css";
 import Navbar from "./components/Navbar";
+import {BrowserRouter as Router} from "react-router-dom";
+
 
 class Page extends React.Component {
   render() {
     return (
-      <div>
+      <Router>
         <Navbar />
-      </div>
+      </Router>
     );
   }
 }

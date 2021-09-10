@@ -7,18 +7,12 @@ import face from "../data/face.png";
 //Navbar component
 function Navbar() {
   return (
-    <Router>
+    <div>
       <div className="header-background"/>
       <div className="navbar-expand navbar-custom row navbar-nav container-custom position-absolute">
         <div className="col-6">
           <Link to="/" className="navbar-font nav-nav fw-bold">
-            <img
-              src={face}
-              alt="Face"
-              width="75"
-              height="75"
-              className="me-2"
-            />
+            <img src={face} alt="Face" width="75" height="75" className="me-2"/>
             Devin Broussard
           </Link>
         </div>
@@ -44,7 +38,7 @@ function Navbar() {
         </Suspense>
           
       </Switch>
-    </Router>
+    </div>
   );
 }
 
