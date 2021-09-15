@@ -11,19 +11,16 @@ function Navbar() {
       <div className="header-background"/>
       <div className="navbar-expand navbar-custom row navbar-nav container-custom position-absolute">
         <div className="col-6">
-          <Link to="/" className="navbar-font nav-nav fw-bold">
+          <Link to="/" className="navbar-font nav-nav fw-bold mt-4">
             <img src={face} alt="Face" width="75" height="75" className="me-2"/>
             Devin Broussard
           </Link>
         </div>
         <div className="navbar-nav col-6 justify-content-end">
           {routersettings.map((routerItem, index) => (
-            <NavLink to={routerItem.redirect} key={index} className="nav-link" activeClassName="active">
-              <button
-              className="button navbar-font hover-color" id={index}>
+            <NavLink to={routerItem.redirect} key={index} className="nav-link navbar-font hover-color" activeClassName="active" exact>
                 <span className="fw-bold">0{index + 1} </span>
                 {routerItem.name}
-              </button>
             </NavLink>
           ))}
         </div>
