@@ -1,7 +1,5 @@
 .navbar-custom {
   flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
   padding-top: 12px;
 }
 

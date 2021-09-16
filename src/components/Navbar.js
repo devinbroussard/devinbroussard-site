@@ -9,7 +9,7 @@ function Navbar() {
   return (
     <div>
       <div className="header-background"/>
-      <div className="navbar-expand navbar-custom row navbar-nav container-custom position-absolute">
+      <div className="navbar-expand navbar-custom row navbar-nav container-sm position-absolute px-3">
         <div className="col-6">
           <Link to="/" className="navbar-font nav-nav fw-bold mt-4">
             <img src={face} alt="Face" width="75" height="75" className="me-2"/>
