@@ -24,26 +24,11 @@
 
 .hover-color:hover {
   color: #889199;
+  border-bottom: 7px solid #d5ddbc;
 }
 
 .navbar-nav-custom {
   display: flex;
-}
-
-.button {
-  border-style: solid;
-  border-right: none;
-  border-top: none;
-  border-left: none;
-  background: none;
-  line-height: 35px;
-  border-width: 6px;
-  outline: none;
-  width: fit-content;
-  border-color: transparent;
-}
-.button:hover {
-  border-color: #d5ddbc;
 }
 
 .active {
