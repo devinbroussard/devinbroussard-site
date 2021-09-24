@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useState, useEffect} from "react";
 import { Switch, Route, Link, NavLink } from "react-router-dom";
 import "../styles/Navbar.css";
 import routersettings from "../static/router-settings";
@@ -6,6 +6,8 @@ import face from "../data/face.png";
 
 //Navbar component
 function Navbar() {
+
+
   return (
     <div>
       <div className="header-background"/>
@@ -16,21 +18,16 @@ function Navbar() {
             Devin Broussard
           </Link>
         </div>
-        <button class="navbar-toggler" type="button"
-         data-toggle="collapse" data-bs-target="#navbarNav" 
-         aria-controls="#navbarNav" aria-expanded="false"
-        aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="navbar-nav justify-content-end collapse navbar-collapse" id="navbarNav">
+        <div className="navbar-nav justify-content-end collapse navbar-collapse" id="#navbarNav">
           {routersettings.map((routerItem, index) => (
-            <NavLink to={routerItem.redirect} key={index} className="navbar-font hover-color mx-2" activeClassName="active" exact>
+            <NavLink to={routerItem.redirect} key={index} className="navbar-font hover-color mx-2" activeClassName="active"  exact>
                 <span className="fw-bold">0{index + 1} </span>
                 {routerItem.name}
             </NavLink>
           ))}
         </div>
       </nav>
+
       <Switch>
         <Suspense fallback={<div>Loading...</div>}>
           {routersettings.map((routerItem, index) => (
