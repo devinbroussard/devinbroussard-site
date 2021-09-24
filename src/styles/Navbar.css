@@ -13,7 +13,6 @@
   font-size: 23px;
   color: #41474c;
   text-decoration: none;
-  padding-top: 1.5rem;
 }
 .navbar-font:hover {
   color: #41474c;
@@ -22,6 +21,9 @@
   color: inherit;
 }
 
+.hover-color {
+  border-bottom: 7px solid transparent;
+}
 .hover-color:hover {
   color: #889199;
   border-bottom: 7px solid #d5ddbc;
