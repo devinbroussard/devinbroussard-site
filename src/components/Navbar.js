@@ -18,6 +18,9 @@ function Navbar() {
             Devin Broussard
           </Link>
         </div>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
         <div className="navbar-nav justify-content-end collapse navbar-collapse" id="#navbarNav">
           {routersettings.map((routerItem, index) => (
             <NavLink to={routerItem.redirect} key={index} className="navbar-font hover-color mx-2" activeClassName="active"  exact>
