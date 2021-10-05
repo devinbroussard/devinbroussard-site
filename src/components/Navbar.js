@@ -6,8 +6,6 @@ import face from "../data/face.png";
 
 //Navbar component
 function Navbar() {
-
-
   return (
     <div>
       <div className="header-background"/>
