@@ -6,14 +6,12 @@ import Navbar from "./components/Navbar";
 import {BrowserRouter as Router} from "react-router-dom";
 
 
-class Page extends React.Component {
-  render() {
-    return (
-      <Router>
-        <Navbar />
-      </Router>
-    );
-  }
+function Page() {
+  return(
+    <Router>
+      <Navbar />
+    </Router>
+  )
 }
 
 ReactDOM.render(
