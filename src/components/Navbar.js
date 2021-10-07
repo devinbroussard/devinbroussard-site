@@ -1,4 +1,4 @@
-import React, { Suspense, useState, useEffect} from "react";
+import React, { Component,Suspense, useState, useEffect} from "react";
 import { Switch, Route, Link, NavLink } from "react-router-dom";
 import "../styles/Navbar.css";
 import routersettings from "../static/router-settings";
@@ -39,6 +39,7 @@ function Navbar() {
         </Suspense>
           
       </Switch>
+      
     </div>
   );
 }
