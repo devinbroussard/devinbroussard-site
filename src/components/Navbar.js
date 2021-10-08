@@ -16,10 +16,10 @@ function Navbar() {
             Devin Broussard
           </Link>
         </div>
-         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div className="navbar-nav justify-content-end collapse navbar-collapse" id="#navbarNav">
+        <div className="justify-content-end collapse navbar-collapse" id="navbar">
           {routersettings.map((routerItem, index) => (
             <NavLink to={routerItem.redirect} key={index} className="navbar-font hover-color mx-2" activeClassName="active"  exact>
                 <span className="fw-bold">0{index + 1} </span>
