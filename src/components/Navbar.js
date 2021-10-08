@@ -20,12 +20,16 @@ function Navbar() {
           <span class="navbar-toggler-icon"></span>
         </button>
         <div className="justify-content-end collapse navbar-collapse" id="navbar">
-          {routersettings.map((routerItem, index) => (
-            <NavLink to={routerItem.redirect} key={index} className="navbar-font hover-color mx-2" activeClassName="active"  exact>
-                <span className="fw-bold">0{index + 1} </span>
-                {routerItem.name}
-            </NavLink>
-          ))}
+          <ul className="navbar-nav">
+            {routersettings.map((routerItem, index) => (
+              <NavLink to={routerItem.redirect} key={index} className="navbar-font hover-color mx-2" activeClassName="active"  exact>
+                <li className="nav-item">
+                  <span className="fw-bold">0{index + 1} </span>
+                  {routerItem.name}
+                </li>
+              </NavLink>
+            ))}
+          </ul>
         </div>
       </nav>
 
