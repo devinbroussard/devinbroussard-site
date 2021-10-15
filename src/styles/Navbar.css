@@ -1,3 +1,7 @@
+body {
+  background-color: #fafbf5;
+}
+
 .navbar-custom {
   flex-direction: row;
   padding-top: 12px;
