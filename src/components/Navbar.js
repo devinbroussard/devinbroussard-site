@@ -9,10 +9,10 @@ function Navbar() {
   return (
     <div>
       <div className="header-background"/>
-      <nav className="navbar navbar-light navbar-expand-xxl navbar-custom navbar-nav container-sm">
+      <nav className="navbar navbar-light navbar-expand-xxl navbar-custom navbar-nav container-xl">
         <div className="navbar-brand">
-          <Link to="/" className="navbar-font nav-nav fw-bold mt-4 fs-2">
-            <img src={face} alt="Face" width="75" height="75" className="me-2 "/>
+          <Link to="/" className="navbar-font nav-nav fw-bold fs-1">
+            <img src={face} alt="Face" width="70" height="70" className="me-2 "/>
             Devin Broussard
           </Link>
         </div>
@@ -23,7 +23,7 @@ function Navbar() {
           <ul className="navbar-nav">
             {routersettings.map((routerItem, index) => (
               <NavLink to={routerItem.redirect} key={index} className="navbar-font hover-color mx-2" activeClassName="active"  exact>
-                <li className="nav-item text-center fs-2">
+                <li className="text-center fs-2">
                   <span className="fw-bold">0{index + 1} </span>
                   {routerItem.name}
                 </li>

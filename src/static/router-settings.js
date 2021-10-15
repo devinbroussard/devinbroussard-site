@@ -19,7 +19,7 @@ const data = [
   },
   {
     name: "projects",
-    redirect: "/project",
+    redirect: "/projects",
     component: React.lazy(() => import(`../pages/ProjectsPage`)),
   },
   {
