@@ -9,21 +9,21 @@ function Navbar() {
   return (
     <div>
       <div className="header-background"/>
-      <nav className="navbar navbar-light navbar-expand-xxl navbar-custom navbar-nav container-xl">
+      <nav className="navbar navbar-light navbar-expand-xxl navbar-custom navbar-nav fluid-container mx-5">
         <div className="navbar-brand">
-          <Link to="/" className="navbar-font nav-nav fw-bold fs-1">
-            <img src={face} alt="Face" width="70" height="70" className="me-2 "/>
-            Devin Broussard
+          <Link to="/" className="navbar-font nav-nav">
+            <img src={face} alt="Face" width="80" height="80" className="me-2 "/>
+            <span className="display-6 fw-bold">Devin Broussard</span>
           </Link>
         </div>
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="justify-content-end collapse navbar-collapse" id="navbar">
+        <div className="collapse navbar-collapse justify-content-end offcanvas offcanvas-end" id="offcanvasScrolling">
           <ul className="navbar-nav">
             {routersettings.map((routerItem, index) => (
               <NavLink to={routerItem.redirect} key={index} className="navbar-font hover-color mx-2" activeClassName="active"  exact>
-                <li className="text-center fs-2">
+                <li className="text-center display-6">
                   <span className="fw-bold">0{index + 1} </span>
                   {routerItem.name}
                 </li>
