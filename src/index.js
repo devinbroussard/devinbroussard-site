@@ -6,7 +6,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import Navbar from "./components/Navbar";
 import {BrowserRouter as Router} from "react-router-dom";
 
-
+//Main app
 class Page extends React.Component {
   render() {
     return (
