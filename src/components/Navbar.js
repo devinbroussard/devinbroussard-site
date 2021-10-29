@@ -9,7 +9,7 @@ function Navbar() {
   return (
     <div>
       <div className="header-background"/>
-      <nav className="navbar navbar-light navbar-expand-xxl navbar-custom navbar-nav fluid-container mx-5">
+      <nav className="navbar navbar-light navbar-expand-xxl navbar-custom navbar-nav fluid-container mx-sm-3">
         <div className="navbar-brand">
           <Link to="/" className="navbar-font nav-nav">
             <img src={face} alt="Face" width="80" height="80" className="me-2 "/>
@@ -19,7 +19,7 @@ function Navbar() {
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse justify-content-start offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+        <div className="collapse navbar-collapse justify-content-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
           <ul className="navbar-nav">
              <div class="offcanvas-header">
                 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
