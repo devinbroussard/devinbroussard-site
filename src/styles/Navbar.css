@@ -8,7 +8,7 @@ body {
 }
 
 .navbar-font {
-  font-size: 23px;
+  font-size: 40px;
   color: #41474c;
   text-decoration: none;
 }
@@ -43,4 +43,9 @@ body {
   width: 100vw;
   background-color:  #99c221;
   height: 2px;;
+}
+
+.nav-item {
+  font-weight: 300;
+  font-size: 50px;
 }
