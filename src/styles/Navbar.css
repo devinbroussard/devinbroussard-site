@@ -8,9 +8,10 @@ body {
 }
 
 .navbar-font {
-  font-size: 40px;
+  font-size: 1.2em;
   color: #41474c;
   text-decoration: none;
+  font-weight: 300;
 }
 .navbar-font:hover {
   color: #41474c;
