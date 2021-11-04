@@ -8,13 +8,12 @@ import face from "../data/face.png";
 function Navbar() {
   return (
     <div>
-      <div className="header-background"/>
-      <nav className="navbar navbar-light navbar-expand-xxl navbar-custom navbar-nav fluid-container bg-secondary">
+      <nav className="navbar navbar-light navbar-expand-xxl navbar-custom navbar-nav fluid-container navbar-background">
         <div className="navbar-brand ms-sm-3">
-          <Link to="/" className="navbar-font">
+          {/* <Link to="/" className="navbar-font">
             <img src={face} alt="Face" width="60" height="60" className="me-2 "/>
-            <span className="navbar-font fw-bold">Devin Broussard</span>
-          </Link>
+            <span className="navbar-font">Devin Broussard</span>
+          </Link> */}
         </div>
         <button class="navbar-toggler me-sm-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
           <span className="navbar-toggler-icon"></span>
