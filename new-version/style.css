@@ -1,0 +1,13 @@
+body,
+html {
+  font-family: "Readex Pro", sans-serif;
+  height: 95vh;
+}
+
+.name-container {
+  padding: 5rem;
+}
+
+.name {
+  font-size: 3rem;
+}
