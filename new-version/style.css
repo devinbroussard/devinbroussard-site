@@ -1,13 +1,83 @@
-body,
-html {
-  font-family: "Readex Pro", sans-serif;
-  height: 95vh;
+body {
+  font-family: 'Readex Pro', sans-serif, Arial, Helvetica, sans-serif;
+  height: 100vh;
+  background-color: #222222;
+  color: #F7FFE5;
+  margin: 0px;
+  font-size: 1.2rem;
 }
 
-.name-container {
-  padding: 5rem;
+.header-section {
+  font-size: 6rem;
+  padding: 9rem;
+  margin-bottom: 4rem;
 }
 
-.name {
-  font-size: 3rem;
+.dev-overlap {
+  position: absolute;
+}
+
+.green {
+  color: #87C977;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.next-section {
+  font-size: 2rem;
+  margin-top: 9rem;
+}
+
+.next-section-button {
+  stroke-width: 2px;
+  stroke: #F7FFE5;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.gradient-background {
+  background: linear-gradient(300deg, #1F1F1F, #2f2f2f, #425c4b);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.about-section {
+  padding: 9rem;
+  padding-top: 10rem;
+}
+
+.section-header {
+  font-size: 5rem;
+  padding-bottom: 1rem;
+  color: #C4D7B2;
+}
+
+.divider {
+  background-color: #F7FFE5;
+  height: 1px;
+  margin-top: 5rem;
+}
+
+.white {
+  color: #f7ffe5;
+}
+
+.green {
+
 }
