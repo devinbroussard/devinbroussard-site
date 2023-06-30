@@ -17,19 +17,24 @@
 
   <body>
     <div class="gradient-background">
-      <div class="header-section">
-        <div>Hi,</div>
-        <div class="dev-overlap green underline" style="margin-left: 11rem">
-          Devin
+      <div class="text-center" style="display: flex; flex-direction: column; align-items: center;"> 
+        <div class="header-section">
+          <div>Hi,</div>
+          <div>
+            I'm
+            <span>
+              <span class="overlap green" style="margin-left: 0.3rem;">
+                Devin
+              </span>
+              Devin</span>,
+          </div>
+          <div>a web <span>
+            <span class="overlap green" style="margin-left: 0.3rem;">
+              dev
+            </span>dev</span>.</div>
         </div>
-        <div>I'm <span class="underline">Devin</span>,</div>
-        <div class="dev-overlap green underline" style="margin-left: 18.2rem">
-          dev
-        </div>
-        <div>a web <span class="underline">dev</span>.</div>
       </div>
-
-      <div class="text-center next-section">
+      <a href="#about-section" class="text-center next-section">
         Learn more
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -45,31 +50,37 @@
             d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
           />
         </svg>
-      </div>
+      </a>
 
       <div class="divider"></div>
     </div>
 
-    <div class="about-section">
+    <div id="about-section" class="about-section">
       <div
         style="
           display: flex;
+          flex-direction: column;
           justify-content: between;
-          gap: 10rem;
+          align-items: center;
         "
       >
-        <div style="flex: 1">
-          <div class="section-header">About Me</div>
-          Dedicated software engineer with a love for writing clean and efficient code. Always eager to learn and explore new possibilities in the world of programming.
-        </div>
-        <div style="flex: 1" class="text-center">
+          <div class="section-header">
+            <div class="overlap green " style="margin-left: 0.3rem;">
+              About Me
+            </div>
+            About Me
+          </div>
+          
           <img
             src="./images/headshot.png"
             alt="headshot"
             style="border-radius: 51%; border: 2px solid #f7ffe5"
             height="300"
           />
-        </div>
+
+          <div class="text-center" style="width: 35rem; margin-top: 3rem;">
+            Dedicated software engineer with a love for writing clean and efficient code. Always eager to learn and explore new possibilities in the world of programming.
+          </div>
         </div>
       </div>
     </div>

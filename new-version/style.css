@@ -1,10 +1,20 @@
 body {
   font-family: 'Readex Pro', sans-serif, Arial, Helvetica, sans-serif;
   height: 100vh;
-  background-color: #222222;
+  background-color: #3a3a3a;
   color: #F7FFE5;
   margin: 0px;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: #F7FFE5;
+  text-decoration: none;
+  display: block;
 }
 
 .header-section {
@@ -13,7 +23,7 @@ body {
   margin-bottom: 4rem;
 }
 
-.dev-overlap {
+.overlap {
   position: absolute;
 }
 
@@ -27,7 +37,7 @@ body {
 
 .next-section {
   font-size: 2rem;
-  margin-top: 9rem;
+  margin-top: 2rem;
 }
 
 .next-section-button {
@@ -40,7 +50,7 @@ body {
 }
 
 .gradient-background {
-  background: linear-gradient(300deg, #1F1F1F, #2f2f2f, #425c4b);
+  background: linear-gradient(300deg, #111510, #262d26, #425c4b);
   background-size: 180% 180%;
   animation: gradient-animation 18s ease infinite;
 }
@@ -63,9 +73,8 @@ body {
 }
 
 .section-header {
-  font-size: 5rem;
-  padding-bottom: 1rem;
-  color: #C4D7B2;
+  font-size: 6rem;
+  padding-bottom: 4rem;
 }
 
 .divider {
@@ -76,8 +85,4 @@ body {
 
 .white {
   color: #f7ffe5;
-}
-
-.green {
-
 }
